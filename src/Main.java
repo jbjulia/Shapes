@@ -63,9 +63,8 @@ public class Main {
                 firstSelection = false;
             } catch (InputMismatchException e) {
                 System.out.println(ANSI_RED + "\nSorry, that is not a valid selection. Please try again. (" + e + ")");
-                break; // Exception caught, break loop
+                break; // Exception caught, break main loop
             }
-
 
             try {
                 switch (selection) {
@@ -197,10 +196,9 @@ public class Main {
                     default ->
                             System.out.println(ANSI_YELLOW + "\nSorry, that's not a valid selection. Please try again.");
                 }
-
             } catch (InputMismatchException e) {
                 System.out.println(ANSI_RED + "\nSorry, your input is invalid. Please try again. (" + e + ")");
-                break;
+                break; // Exception caught, break main loop
             }
         }
     }
